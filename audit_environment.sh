@@ -10,8 +10,8 @@ knife environment list | grep -E '(sig|phi|god|gre)_pr' >> "$rep/environment.lis
 echo "Création du fichier avec hostname des machines inclues dans les environnements"
 
 fichier1="$rep/environment.list"
-oldIFS=$IFS     # sauvegarde du séparateur de champ
-IFS=$'\n'       # nouveau séparateur de champ, le caractère fin de ligne
+oldIFS=$IFS
+IFS=$'\n'
 
 for ligne1 in $(<$fichier1)
 do
