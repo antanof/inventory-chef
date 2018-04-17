@@ -3,7 +3,7 @@
 rep="resultats_`date "+%Y-%m-%d"`"
 mkdir "$rep"
 
-echo "Création de la liste des environnements à auditer"
+echo "Création de la liste des environnements à auditer" # à adapter aux besoins
 
 knife environment list | grep -E '(sig|phi|god|gre)_pr' >> "$rep/environment.list"
 
